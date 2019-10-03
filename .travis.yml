@@ -43,7 +43,7 @@ deploy:
     api_key:
       secure: BykD5IfX5Wb3Qg3XblenNtMDRIpRtNS//d70pwLSm4n1h1BOn5e1JOhB/jZlI8LMVvpFYptZXDfG2XhXr/Hsy7VakVetXnvct1UK+iJpTmal/D7rJ925cTmdL6FtfdJE0h7QrM49oA1tFcXTGROf/ZWcSSsofFLcF67RAbMLV05CvUaKtU5zUgNdfT8d6iDZ0UjERuaVOw22pJ26KeLCVh7T5bCU4uuh0U0wmAk6SCoIIviBO6RCQLtIJLE5mwhJGWkxILW0zFIxzfyKWMKUFTDrltDsipZ59yx1VfD7bnm9xUp0RkVs0I5u/IWoZQehAe2olYABA093BT2SH7CngdtPari84NYWmVDXc5DTRkh2iY1nsUT6IYzGhxI/AGR5tSGP387C9YYIfg5QCr/Xxj/nGiZIMcQHK+rVINYpSdNGFCQ9pqcYqTsnk2jE9uTSaZd8gMFtTJaviVWVuWGxLsu6sLJVHecKbgICD+obACNgUrEmO5zTAd4BHrgXw0PM3KKRTlbAnil/G225GCdPRd6KRcq3lwCLVXdWFoNwMHXIGbjV1EiZ1hPxIo+YJr/ak7289MkZJXn2th9qXP1U7Y0J8eXPLj13KLPZIiHW8UrIs41OsdRzpbaQuSgXyriYrUbgWHBYbxXCB9o9WEly17COtVQ7fU7M5qNZ/bbjkpw=
     file_glob: true
-    file: "${TRAVIS_BUILD_DIR}/0*/0*.pdf"
+    file: "${TRAVIS_BUILD_DIR}/erc-*/*.pdf"
     skip_cleanup: true
     on:
       repo: DanySK/erc-latex-template
@@ -52,7 +52,7 @@ deploy:
     api_key:
       secure: BykD5IfX5Wb3Qg3XblenNtMDRIpRtNS//d70pwLSm4n1h1BOn5e1JOhB/jZlI8LMVvpFYptZXDfG2XhXr/Hsy7VakVetXnvct1UK+iJpTmal/D7rJ925cTmdL6FtfdJE0h7QrM49oA1tFcXTGROf/ZWcSSsofFLcF67RAbMLV05CvUaKtU5zUgNdfT8d6iDZ0UjERuaVOw22pJ26KeLCVh7T5bCU4uuh0U0wmAk6SCoIIviBO6RCQLtIJLE5mwhJGWkxILW0zFIxzfyKWMKUFTDrltDsipZ59yx1VfD7bnm9xUp0RkVs0I5u/IWoZQehAe2olYABA093BT2SH7CngdtPari84NYWmVDXc5DTRkh2iY1nsUT6IYzGhxI/AGR5tSGP387C9YYIfg5QCr/Xxj/nGiZIMcQHK+rVINYpSdNGFCQ9pqcYqTsnk2jE9uTSaZd8gMFtTJaviVWVuWGxLsu6sLJVHecKbgICD+obACNgUrEmO5zTAd4BHrgXw0PM3KKRTlbAnil/G225GCdPRd6KRcq3lwCLVXdWFoNwMHXIGbjV1EiZ1hPxIo+YJr/ak7289MkZJXn2th9qXP1U7Y0J8eXPLj13KLPZIiHW8UrIs41OsdRzpbaQuSgXyriYrUbgWHBYbxXCB9o9WEly17COtVQ7fU7M5qNZ/bbjkpw=
     file_glob: true
-    file: "${TRAVIS_BUILD_DIR}/0*/0*.pdf"
+    file: "${TRAVIS_BUILD_DIR}/erc-*/*.pdf"
     skip_cleanup: true
     on:
       repo: DanySK/erc-latex-template
