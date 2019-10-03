@@ -46,7 +46,6 @@ deploy:
     file: "${TRAVIS_BUILD_DIR}/erc-*/*.pdf"
     skip_cleanup: true
     on:
-      repo: DanySK/erc-latex-template
       tags: true
   - provider: releases
     api_key:
@@ -55,5 +54,4 @@ deploy:
     file: "${TRAVIS_BUILD_DIR}/erc-*/*.pdf"
     skip_cleanup: true
     on:
-      repo: DanySK/erc-latex-template
       tags: false
