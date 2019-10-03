@@ -17,6 +17,7 @@ addons:
     - texlive-fonts-recommended
     # Biber replacement for BibLaTeX
     - biber
+    - texlive-bibtex-extra
     # Debug
     - tree
 env:
