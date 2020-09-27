@@ -1,7 +1,7 @@
 # Do not double-build branches and PRs from this repo
 if: repo != head_repo
 
-dist: bionic
+dist: focal
 language: bash
 git:
   depth: false
