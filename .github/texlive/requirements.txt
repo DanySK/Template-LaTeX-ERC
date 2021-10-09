@@ -1,2 +1,0 @@
-biber
-texlive-bibtex-extra
