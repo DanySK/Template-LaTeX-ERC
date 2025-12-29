@@ -20,3 +20,19 @@ Research proposal [Part B2]\\
 \par\vspace{1.2em}}}
 
 \bonefalse
+
+\newcommand{\headfundingid}{{\centering\bfseries\itshape Appendix: All current grants and
+on-going / submitted grants and funding of the PI (Funding
+ID)\par}\vspace{1cm}}
+
+\newenvironment{fundingidtable}{%
+\noindent\begin{tabular}{p{4.2em}>{\raggedright}p{5.2em}>{\raggedleft}p{3em}>{\raggedright}p{4.5em}>{\raggedright}p{4.5em}p{15em}}
+\toprule
+\centering \textit{Title}&
+\centering \textit{Funding Source}&
+\centering\textit{Amount (\texteuro)}&
+\multicolumn{1}{c}{\textit{Period}}&
+\textit{Role of\\the PI}&
+\multicolumn{1}{c}{\textit{Relation to the current ERC}}\\
+\midrule}
+{\bottomrule\end{tabular}}
