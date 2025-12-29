@@ -15,6 +15,7 @@
 \RequirePackage{booktabs}
 \RequirePackage{textcomp}
 \RequirePackage{array}
+\RequirePackage{ulem}
 \RequirePackage[TS1,T1]{fontenc}
 
 \newsavebox{\@abstract}
@@ -22,9 +23,21 @@
 {\vfill\begin{lrbox}{\@abstract}\begin{minipage}{0.945\textwidth}}
 {\end{minipage}\end{lrbox}\fbox{\usebox{\@abstract}}}
 
+\newsavebox{\boxedenvbox}
+\newenvironment{boxed}[1][0.945\textwidth]{%
+    \par\medskip
+    \begin{lrbox}{\boxedenvbox}\begin{minipage}{#1}%
+}{%
+    \end{minipage}\end{lrbox}%
+    \fbox{\usebox{\boxedenvbox}}%
+    \par\medskip
+}
+
 \setkomafont{section}{\normalsize\normalfont\bfseries}
-\setkomafont{subsection}{\large\sffamily\mdseries\upshape\color{sectiontitlecolor}}
-\renewcommand{\thesection}{\alph{section}} 
+\setkomafont{subsection}{\normalsize\normalfont\bfseries\MakeUppercase}%{\large\sffamily\mdseries\upshape\color{sectiontitlecolor}}
+\setkomafont{subsubsection}{\normalsize\normalfont\bfseries}%{\large\sffamily\mdseries\upshape\color{sectiontitlecolor}}
+
+\renewcommand{\thesection}{\alph{section}}
 
 \renewcommand{\othersectionlevelsformat}[3]{\ifthenelse{\equal{#1}{section}}{Section #3: }{#3) }}
 
