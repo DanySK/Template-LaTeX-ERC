@@ -24,7 +24,7 @@
 {\end{minipage}\end{lrbox}\fbox{\usebox{\@abstract}}}
 
 \newsavebox{\boxedenvbox}
-\newenvironment{boxed}[1][0.945\textwidth]{%
+\newenvironment{inabox}[1][0.945\textwidth]{%
     \par\medskip
     \begin{lrbox}{\boxedenvbox}\begin{minipage}{#1}%
 }{%
